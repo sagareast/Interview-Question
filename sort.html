@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<script type="text/javascript">
+function swap(array,first_index,second_index){
+	var temp=array[first_index];
+	array[first_index]=array[second_index];
+	array[second_index]=temp;
+}
+function bubble_sort(arr){
+	var length =arr.length,i,j,stop;
+	for(i=0;i<length;i++){
+		for(j=0,stop=length-i;j<stop;j++){
+			console.log("j->"+j+"-----stop"+stop);
+			debugger;
+			if(arr[j]>arr[j+1]){
+				swap(arr,j,j+1);
+			}
+		}
+	}
+     console.log("sort->"+arr);
+}
+bubble_sort([1,4,7,8,2,3,4,5,6,6,-1])
+</script>
+</head>
+<body>
+
+
+
+</body>
+</html>
